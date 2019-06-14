@@ -17,3 +17,7 @@ class School:
             if s.name == name:
                 return s
 
+    def list_idiot(self):
+        for s in self.students:
+            if s.average() < 60:
+                print(f"{s.name} is idiot!")
